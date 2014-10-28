@@ -58,6 +58,14 @@ theme, simply do:
 $ git fetch upstream
 $ git merge upstream/gh-pages
 ```
+```c
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+	printf("hello, world!\n");
+	return 0;
+}
 
 Of course you will have to resolve conflicts for \_config.yml, \_includes/links-list.html,
 and \_posts, and so on, but in practice this is pretty simple.
