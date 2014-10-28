@@ -59,7 +59,7 @@ $ git fetch upstream
 $ git merge upstream/gh-pages
 ```
 
-```
+```c
 /* hello world demo */
 #include <stdio.h>
 int main(int argc, char **argv)
