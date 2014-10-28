@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: My blog
-description: A jekyll theme
+name: Katsura's blog
+description: Keep it simple stupid.
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://katsurakotarou.github.io
@@ -25,7 +25,7 @@ disqus: ''
 comments: true
 
 permalink: /:year/:month/:title
-paginate: 3
+paginate: 5
 
 highlighter: pygments
 markdown: redcarpet
