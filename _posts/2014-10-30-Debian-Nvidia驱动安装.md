@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Debian Nvidia驱动安装"
-date: 2014-10-3018:38:32 -0700
+date: 2014-10-30 18:38:32 -0700
 comments: false
 ---
 
