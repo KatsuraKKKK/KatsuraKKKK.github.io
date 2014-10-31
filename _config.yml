@@ -1,7 +1,7 @@
 # Jekyll configuration
 
 name: Katsura's blog
-description: Keep it simple stupid.
+description: Keep it simple stupid. & Don't repeat yourself.
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://katsurakotarou.github.io
