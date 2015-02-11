@@ -24,6 +24,5 @@ comments: false
 看不明白这是做什么的，但是后来我查看了《hackers delight》（中译：高效程序的奥秘）这本书，才知道这个函数是用来计算c的上舍入到2的n次幂。书上的函数如下图：
 ![License Badge]({{ site.baseurl}}/images/201412/01/concurrentHashMap1.png)
 
-我也还不明白这里面的数学原理是什么，不过已经把《hackers delight》加入书单，等搞明白了再更新。
 
 
