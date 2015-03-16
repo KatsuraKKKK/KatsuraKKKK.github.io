@@ -3,6 +3,17 @@ body {
     padding-bottom: 60px;
 }
 
+a {
+	color:#0e83cd;
+}
+
+h1 a {
+	color: #444;
+	font-size: 26px;
+	font-weight: 300;
+	transition: all 0.2s ease 0s;
+}
+
 .copyright {
     color: #ffffff;
 }
@@ -21,7 +32,7 @@ body {
 }
 
 .sidebar a {
-    color: #428bca;
+    color: #444;
 }
 
 .sidebar li {
@@ -38,7 +49,7 @@ body {
 }
 
 .well h1 {
-    color: #ee4444;
+    color: #0e83cd;
     font-size: 1.3em;
 }
 
@@ -48,4 +59,18 @@ body {
 
 .author a {
     color: #ee4444;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top {
+	font-size: 19px;
+	padding: 0px 50px 0px 50px;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top a.navbar-brand{
+	font-size: 25px;
+}
+
+div.container.container-left {
+	margin-top: 15px;
+	padding: 0px 50px 0px 50px;
 }
