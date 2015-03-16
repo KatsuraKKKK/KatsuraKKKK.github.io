@@ -1,7 +1,13 @@
 ---
 layout: post
 title: "Debian Nvidia驱动安装"
-date: 2014-10-30 18:38:32 -0700
+date: 2014-10-30 18:38:32 +0800
+category: linux
+tags: 
+- linux
+- debian
+- driver
+- nvidia
 comments: false
 ---
 

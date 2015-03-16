@@ -2,7 +2,12 @@
 layout: post
 title: "My knowledge architecture"
 data: 2015-02-14 11:15:30 +0800
-comments: true
+category: life
+tags:
+- book
+- knowledge
+- plan
+comments: false
 ---
 
 &emsp; 一直以来都没有好好的整理过自己读过的书，也不明白自己到底读了哪些方面的书，最近把自己能想到的自己读过的主要的书籍整理了一下，画了一个思维导图，给自己做个参考在这里贴出来自勉。

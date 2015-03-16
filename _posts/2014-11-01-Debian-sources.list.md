@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Debian sources.list"
-data: 2014-11-01 22:38:32 -0700
+data: 2014-11-01 22:38:32 +0800
+category: linux
+tags: 
+- linux
+- debian
+- source list
 comments: false
 ---
 
