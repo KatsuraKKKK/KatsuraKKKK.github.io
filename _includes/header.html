@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	var url = document.URL,
+		indexOfX = url.lastIndexOf("/"),
+		indexOfDot = url.lastIndexOf("."),
+		subStr = url.substr(indexOfX+1, indexOfDot-indexOfX-1),
+		selector = "#home";
+	if ("" != subStr){
+		selector = "#" + subStr;
+	} else {
+	
+	}
+	$(selector).addClass("active").removeClass("inactive");
+});
+</script>
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/pygments.css" rel="stylesheet">
