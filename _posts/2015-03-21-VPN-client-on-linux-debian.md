@@ -7,7 +7,7 @@ tags:
 - vpn 
 - debian
 - linux
-comments: false
+comments: true
 ---
 
 Install the pptp-linux and pptp-linux-client:
