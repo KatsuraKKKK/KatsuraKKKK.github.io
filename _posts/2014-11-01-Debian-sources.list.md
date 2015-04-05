@@ -7,7 +7,7 @@ tags:
 - linux
 - debian
 - source list
-comments: false
+comments: true
 ---
 
 以下是在用的Debian7 testing的更新源，教育网内很好用，可以直接ipv6更新。由于我打开了32位软件包的支持，所以加上了64位和32位的选项。

@@ -5,7 +5,7 @@ data: 2014-12-02 13:38:32 +0800
 category: algorithm
 tags:
 - algorithm
-comments: false
+comments: true
 ---
 最近看JDK中的concurrentHashMap类的源码，其中有那么一个函数
 
