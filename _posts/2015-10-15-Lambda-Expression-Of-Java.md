@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 
-#### 题记 ####
+### 题记 ###
 在阅读JDK源码*java.util.Collections*的时候在*UnmodifiableCollection*类中看到了这么一段代码：
 
 ```java
@@ -327,7 +327,7 @@ Lambda演算在wiki上的非形式化表述如下：
 
 	int sumOfWeights = widgets.stream()
               				.reduce(0,
-                          	(sum, b) -> sum + b.getWeight())，
+                          	(sum, b) -> sum + b.getWeight()),
                             Integer::sum);
 ```
 
@@ -361,15 +361,15 @@ Lambda演算在wiki上的非形式化表述如下：
 
 以上只是对于stream的简单举例，详情请阅读[JSR335-FINAL](https://jcp.org/en/jsr/detail?id=335)(Java Specification Requests)中关于java.util.stream的部分。
 
-#### 后记 ####
+### 后记 ###
 起初我认为这些新特性只是一些语法糖，现在我也还认为这个特性是个语法糖。虽然在开发过程中很少用到这个新特性（甚至都不会用到），但是了解这些新特性总是没有坏除的，恰当的使用这些新特性在某些场景下的确可以取得很好的效果（简洁的代码，优秀的性能）。这篇文章的初衷一是对自己所得的记录，二是做一个分享。写得不好的或者谬误的地方还请大家批评指正，一起交流，共同进步。
 
 ### 参考文献 ###
 
 [Lambda演算-wikipedia](https://zh.wikipedia.org/zh-cn/%CE%9B%E6%BC%94%E7%AE%97#lambda.E6.BC.94.E7.AE.97.E4.B8.AD.E7.9A.84.E7.AE.97.E8.A1.93)
+
 [JSR335-FINAL](https://jcp.org/en/jsr/detail?id=335)(Java Specification Requests)
+
 [Oracle-Java SE 8: Lambda Quick Start](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html)
-
-
 
 [My Github](http://katsurakkkk.github.io/)
