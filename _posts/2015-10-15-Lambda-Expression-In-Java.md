@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lambda Expression Of Java"
+title: "Lambda Expression In Java"
 data: 2015-10-15 23:15:30 +0800
 category: Java
 tags:
