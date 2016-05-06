@@ -85,8 +85,8 @@ Constructor.
 i=2|j=3
 ```
 
-## 编辑单元（翻译单元）
-每个编辑单元都必须以一个.java结尾，而且在编辑单元内部可以有一个public类，必须与编辑单元的名字相同。并且每个编辑单元中只能有一个public类，但是可以有多个非public类。如下：
+## Compilation unit
+每个Compilation unit就是一个java文件，必须以一个.java结尾，而且在编辑单元内部可以有一个public类，必须与编辑单元的名字相同。并且每个编辑单元中只能有一个public类，但是可以有多个非public类。如下：
 ```
 // EditUnit.java
 public class EditUnit {
