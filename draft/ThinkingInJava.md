@@ -112,3 +112,57 @@ public interface RandVals {
 }
 ```
 由于字段是static的，所以会在首次装载类之后，以及首次访问任何字段之前获得初始化。所以接口里面的属性可以理解为一个static字段，它们也是保存于那个接口的static存储区域中。
+
+## 内部类和upcast
+内部类看起来没有什么特别的地方，然而当我们准备upcast到一个基类的时候，内部类就开始发挥其关键作用。这是由于内部类随后可以完全进入不可见或者不可用的状态--对任何人都如此。所以我们可以非常方便的隐藏实施细节。我们得到的全部回报就是一个基础类或者接口的句柄，而且甚至有可能不知道准确的类型。如下：
+```
+abstract class Contents {
+	abstract public int value();
+}
+
+interface Destination {
+	String readLabel();
+}
+
+class Parcel {
+	private class PContents extends Contents {
+		private int i = 11;
+
+		@Override
+		public int value() {
+			return i;
+		}
+	}
+
+	protected class PDestination implements Destination {
+		private String label;
+
+		private PDestination(String whereTo) {
+			label = whereTo;
+		}
+
+		@Override
+		public String readLabel() {
+			return label;
+		}
+	}
+
+	public Destination dest(String s) {
+		return new PDestination(s);
+	}
+
+	public Contents cont() {
+		return new PContents();
+	}
+}
+
+class Test {
+	public static void main(String[] args) {
+		Parcel p = new Parcel();
+		Contents c = p.cont();
+		Destination d = p.dest("ShenZhen");
+		// Illegal -- can't access private class:
+		//! Parcel.PContents c = p.new Pcontents();
+	}
+}
+```
