@@ -95,3 +95,20 @@ public class EditUnit {
 class NotPublic {
 }
 ```
+
+## final方法
+1. 不希望方法在继承过程中改变
+2. inline，将一个方法设置成final以后，编译器就可以把对那个方法的所有调用都变成内联函数，直接加入需要调用的地方，免除了函数调用的入栈和退栈操作。但是过大的方法内联会使得程序变得臃肿，所以不要过于相信编译器的判断，最好只有在方法代码量非常少或者想明确禁止方法被覆盖的时候，才应考虑将一个方法设为final。
+3. 类内所有private方法都自动成为final。可以为一个private方法添加final提示符，但却不能为那个方法提供任何额外的含义。
+
+## 接口中定义的字段
+接口中定义的字段会自动具有static和final属性。它们不能是‘空白final’，但可以初始化成非常数表达式。如下：
+```
+public interface RandVals {
+	int rint = (int)(Math.random() * 10);
+	long rlong = (long)(Math.random() * 10);
+	float rfloat = (float)(Math.random() * 10);
+	double rdouble = (double)(Math.random() * 10);
+}
+```
+由于字段是static的，所以会在首次装载类之后，以及首次访问任何字段之前获得初始化。所以接口里面的属性可以理解为一个static字段，它们也是保存于那个接口的static存储区域中。
