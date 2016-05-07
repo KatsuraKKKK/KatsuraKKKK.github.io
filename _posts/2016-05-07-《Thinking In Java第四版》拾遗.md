@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 
-《Tinking In Java第四版》拾遗
+#《Tinking In Java第四版》拾遗
 
 近日重读了《Thinking In Java第四版》（可能版本比较老），发现一些有趣的和值得注意的地方，在此作个记录。
 
