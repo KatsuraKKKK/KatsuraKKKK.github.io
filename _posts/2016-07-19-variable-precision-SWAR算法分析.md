@@ -9,6 +9,7 @@ tags:
 - Hamming Weight
 
 comments: true
+
 ---
 
 # variable-precision SWAR算法：计算Hamming Weight
