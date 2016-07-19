@@ -6,10 +6,8 @@ category: Algorithm
 tags:
 - Algorithm
 - 算法
-- Hamming Weight
-
+- HammingWeight
 comments: true
-
 ---
 
 # variable-precision SWAR算法：计算Hamming Weight
