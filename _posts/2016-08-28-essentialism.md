@@ -9,7 +9,7 @@ tags:
 comments: true
 ---
 
-####《精要主义》思维导图
+#### 《精要主义》思维导图
 
 ![KnowledgeArchitecture]({{ site.baseurl}}/images/2016/08/essentialism.png)
 
