@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "concurrentHashMap中的2的n次幂上舍入方法"
+title: "ConcurrentHashMap中的2的n次幂上舍入方法"
 data: 2014-12-02 13:38:32 +0800
 category: algorithm
 tags:
