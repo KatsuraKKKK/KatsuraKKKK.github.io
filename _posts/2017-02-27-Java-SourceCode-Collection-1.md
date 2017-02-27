@@ -15,7 +15,7 @@ comments: true
 本文主要为自己在阅读JDK集合类源码的一些笔记，其中涉及java.util包中的集合类型，没有包括java.util.concurrent包。
 惯例的类图
 
-![collection1]({{ site.baseurl}}/images/2017/02/colletion1.png)
+![collection1]({{ site.baseurl}}/images/2017/02/collection1.png)
 
 ### Vector 
  Vector 实现可增长的对象数组。与数组一样，它包含可以使用整数索引进行访问的组件。Vector 的大小可以根据需要增大或缩小，以适应创建 Vector 后进行添加或移除项的操作。
