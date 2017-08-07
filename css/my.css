@@ -14,3 +14,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 	font-weight: 600;
 }
+
+h1 a {
+    font-weight: inherit;
+}
