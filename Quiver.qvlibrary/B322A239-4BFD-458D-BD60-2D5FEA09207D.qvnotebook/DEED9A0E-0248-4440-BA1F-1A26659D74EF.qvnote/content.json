@@ -1,0 +1,9 @@
+{
+  "title": "Gerrit 使用",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "* SSH公钥\n\n  ssh-keygen -t rsa -C \"自己邮箱@fangdd.com\n\n* Clone with hooks\n\n  git clone ssh://panfeilong-sz@gerrit.fangdd.cn:29418/fangdd/infr/TradeCenter2.0 && scp -p -P 29418 panfeilong-sz@gerrit.fangdd.cn:hooks/commit-msg TradeCenter2.0/.git/hooks/\n\n* push to master\n\n  git push origin master:refs/for/master"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "CIC接口",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<ul>\n  <li><pre style=\"background-color:#191919;color:#ffffff;font-family:'Menlo';font-size:9.0pt;\"><br><br><span style=\"color:#ec691e;\">public </span>String updateTime;<br><span style=\"color:#ec691e;\">public </span>TCategory category;<br><span style=\"color:#ec691e;\">public </span>TStage stage;<br><span style=\"color:#ec691e;\">public </span>String devProtectedTime;<br><span style=\"color:#ec691e;\">public </span>String devVisitTime;<br><span style=\"color:#ec691e;\">public </span>String lastOrderTime;<br><span style=\"color:#ec691e;\">public </span>String lastSubscribeTime;<br><span style=\"color:#ec691e;\">public </span>String lastSignTime;<br><span style=\"color:#ec691e;\">public </span>String lastApplyGuideTime;<br><span style=\"color:#ec691e;\">public </span>String agentProtectedTime;<br><span style=\"color:#ec691e;\">public int </span>agentCompanyId;<br></pre></li></ul><div><div><br></div></div>"
+    }
+  ]
+}

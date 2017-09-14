@@ -1,0 +1,9 @@
+{
+  "title": "FileSystem",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\">\n<div>FCB—&gt;inode—&gt; 含有十三项索引表</div>\n<div>索引表使用混合的三级索引</div>\n<div>前十个直接到物理块</div>\n<div>第十一个是一级索引</div>\n<div>第十二个是二级索引</div>\n<div>第十三个是三级索引</div>\n<div><br/></div>\n<div><br/></div>\n<div><br/></div>\n<div>同构的任务才能使用多线程提高性能。</div>\n</div>"
+    }
+  ]
+}

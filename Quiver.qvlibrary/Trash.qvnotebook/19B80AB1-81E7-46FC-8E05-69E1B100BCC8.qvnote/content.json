@@ -1,0 +1,9 @@
+{
+  "title": "Untitled Note",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "{\n  \"msgId\" : 3000,\n  \"msgBody\" : {\n    \"agentId\" : 3010115,\n    \"priceMax\" : \"\",\n    \"custMobile\" : \"13800138024\",\n    \"houseId\" : 53056,\n    \"belongChangeFrom\" : \"\",\n    \"subscribeTime\" : \"\",\n    \"orderId\" : \"\",\n    \"eventSource\" : \"\",\n    \"guideId\" : 12341402,\n    \"orderStatus\" : \"\",\n    \"remark\" : \"我都好好的把打打闹闹的你\",\n    \"cityId\" : \"\",\n    \"priceMin\" : \"\",\n    \"houseName\" : \"世纪新海城\",\n    \"followUserId\" : 0,\n    \"pushAgentId\" : \"\",\n    \"eventTime\" : \"2017-05-25 20:14:02\",\n    \"customerId\" : \"\",\n    \"confirmStatus\" : 1,\n    \"applyTime\" : \"2017-05-25 20:14:02\",\n    \"followMode\" : 0,\n    \"protectedDays\" : \"\",\n    \"hideMobile\" : \"13800138024\",\n    \"custGender\" : \"\",\n    \"houseType\" : \"\",\n    \"agentName\" : \"刘测试\",\n    \"confirmTime\" : \"\",\n    \"guideType\" : 3,\n    \"eventType\" : 6,\n    \"followRole\" : 0,\n    \"certId\" : 2081,\n    \"custName\" : \"测试24\",\n    \"belongChangeTo\" : \"\",\n    \"isHideNumber\" : 0,\n    \"customerName\" : \"测试24\",\n    \"agentMobile\" : \"13900011121\",\n    \"assistantId\" : \"\",\n    \"followRemark\" : \"\",\n    \"districtId\" : \"\",\n    \"ccId\" : 0,\n    \"isSuperGuide\" : \"\",\n    \"category\" : 1,\n    \"protectedDate\" : \"\",\n    \"customerMobile\" : \"13800138024\",\n    \"followUserName\" : \"\"\n  }\n}"
+    }
+  ]
+}

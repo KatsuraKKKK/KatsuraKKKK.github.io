@@ -1,0 +1,9 @@
+{
+  "title": "接口调用",
+  "cells": [
+    {
+      "type": "text",
+      "data": "订单编辑<div><font color=\"#323232\" style=\"background-color: rgb(254, 250, 0);\">TradeCenterServiceImpl.selectOrderActionTrace—queryOrderAction</font><br></div><div><font color=\"#323232\" style=\"background-color: rgb(254, 250, 0);\">TradeCommissionServiceImpl.getOrderDetailInfo——queryOrderDetail</font><br></div><div>TradeCenterServiceImpl.selectOrderActionTrace<br></div><div>TradeCommissionServiceImpl.batchCalculateOrderSettlementCondition<br></div><div><font>TradeCenterServiceImpl.queryCollectionRedByFilter //红冲</font><br></div><div>TradeCenterServiceImpl.queryRefundOrderList—查询退款单<br></div><div><br></div><div><br></div><div>订单编辑提交</div><div>TradeCommissionServiceImpl.getOrderDetailInfo<br></div><div>TradeCommissionServiceImpl.editOrderDetail<br></div><div><br></div><div>查看订单详情</div><div>radeCommissionServiceImpl.getOrderDetailInfo<br></div><div>TradeCenterServiceImpl.selectOrderActionTrace<br></div><div>TradeCommissionServiceImpl.batchCalculateOrderSettlementCondition<br></div><div>TradeCenterServiceImpl.queryCollectionRedByFilter<br></div><div><br></div><div>取消订单</div><div>TradeCommissionServiceImpl.getOrderDetailInfo<br></div><div>TradeCenterServiceImpl.selectOrderActionTrace<br></div><div>TradeCommissionServiceImpl.batchCalculateOrderSettlementCondition<br></div><div>TradeCenterServiceImpl.queryCollectionRedByFilter<br></div><div>TradeCenterServiceImpl.applyCancelOrder<br></div><div><br></div><div><br></div><div>查看pos收款</div><div>TradeCommissionServiceImpl.getOrderDetailInfo<br></div><div>TradeCenterServiceImpl.selectOrderActionTrace<br></div><div>TradeCommissionServiceImpl.batchCalculateOrderSettlementCondition<br></div><div>TradeCenterServiceImpl.queryCollectionRedByFilter<br></div><div>24477<br></div>"
+    }
+  ]
+}

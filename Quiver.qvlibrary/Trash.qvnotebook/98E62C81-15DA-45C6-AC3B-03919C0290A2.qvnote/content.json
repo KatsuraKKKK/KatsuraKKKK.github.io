@@ -1,0 +1,47 @@
+{
+  "title": "SC数据迁移",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div>数据不一致和无效的数据（relation金额不等于commission)：  129</div><div></div>"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "SELECT\n commission.pid\nFROM\n fdd_settlement_center.t_sc_commission commission,\n (SELECT\n \tcommission_id, sum(relation.amount) as amount\n FROM\n \tfdd_settlement_center.t_sc_relation relation,\n \tfdd_settlement_center.t_sc_settlement settlement\n \tWHERE\n \trelation.del_flag = 0\n \tAND settlement.del_flag = 0\n \tAND relation.settlement_id = settlement.pid\n \tAND settlement.`status` IN (90)\n GROUP BY commission_id) AS relation_amount\nWHERE\n \tcommission.del_flag = 0\n AND relation_amount.commission_id = commission.pid\n AND relation_amount.amount <> commission.paid_amt - commission.recover_amt;\nUPDATE fdd_settlement_center.t_sc_commission\nSET transfer_flag = 1\nWHERE pid IN (SELECT commission_id FROM fdd_settlement_center.commission_id_temp);"
+    },
+    {
+      "type": "text",
+      "data": "-- 应收已收都为0：&nbsp;<span style=\"font-family: Helvetica; font-size: 12px;\">11673</span>"
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "data": "INSERT INTO fdd_settlement_center.`commission_id_temp` (commission_id)\nSELECT\n commission.pid\nFROM\n fdd_settlement_center.t_sc_commission commission\nWHERE\n \tcommission.del_flag = 0 AND commission.total_pay_amt = 0 AND commission.paid_amt = 0 AND commission.transfer_flag = 0;\nUPDATE fdd_settlement_center.t_sc_commission\nSET transfer_flag = 1\nWHERE pid IN (SELECT commission_id FROM fdd_settlement_center.commission_id_temp);\n"
+    },
+    {
+      "type": "text",
+      "data": "已删除 ： 包含在上面两种无效数据中"
+    },
+    {
+      "type": "text",
+      "data": "总有效数据 &nbsp;&nbsp;144529<div>SELECT count(1) FROM fdd_settlement_center.t_sc_commission commission WHERE commission.transfer_flag = 0;<br></div>"
+    },
+    {
+      "type": "text",
+      "data": "垫佣有效数据&nbsp;102<div>&nbsp;SELECT count(1) FROM fdd_settlement_center.t_sc_commission commission WHERE commission.is_prepay = 1 AND commission.transfer_flag = 0;<br></div>"
+    },
+    {
+      "type": "text",
+      "data": "非垫佣有效数据&nbsp;144427<div>SELECT count(1) FROM fdd_settlement_center.t_sc_commission commission WHERE commission.is_prepay &lt;&gt; 1 AND commission.transfer_flag = 0;<br></div>"
+    },
+    {
+      "type": "text",
+      "data": "<div><br></div><div>有有效settlement 非垫佣 &nbsp;<span style=\"font-family: Helvetica; font-size: 12px;\">114019</span></div><div><span style=\"font-family: Helvetica; font-size: 12px;\">－－</span>&nbsp;结清且只有一条settlement 110841</div><div>没有有效settlement &amp;&amp; 非垫佣&nbsp;<span style=\"font-family: Helvetica; font-size: 12px;\">30408</span><span style=\"font-family: Helvetica; font-size: 12px;\"><br></span></div><div>&nbsp;<span style=\"font-family: Helvetica; font-size: 12px;\"><br></span></div>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

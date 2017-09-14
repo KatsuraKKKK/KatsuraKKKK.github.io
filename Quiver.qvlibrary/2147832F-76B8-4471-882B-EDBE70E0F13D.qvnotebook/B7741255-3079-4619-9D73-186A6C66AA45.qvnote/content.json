@@ -1,0 +1,9 @@
+{
+  "title": "WEB",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\"><div><strong><a href=\"http://www.cnblogs.com/aaronjs/p/3279314.html\">jQuery源码分析系列</a></strong></div><div><a href=\"http://www.cnblogs.com/aaronjs/p/3279314.html\">http://www.cnblogs.com/aaronjs/p/3279314.html</a></div><div><br/></div><div>URL #的含义</div><div><a href=\"http://www.ruanyifeng.com/blog/2011/03/url_hash.html\">http://www.ruanyifeng.com/blog/2011/03/url_hash.html</a></div><div><br/></div><div>深入理解Javascript系列</div><div><a href=\"http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html\">http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html</a></div><div><br/></div><div>重复一下，封装的基本目的是一个从辅助数据的用户中抽象出来，而不是一个防止黑客隐藏数据。 更严重的，封装不是用private修饰数据而达到软件安全的目的。</div><div><br/></div><div>封装辅助对象（局部），我们用最小的代价、本地化和预测性变化来问为公共接口的行为变化提供可行性，这也正是封装的目的。</div><div><br/></div><div>mybatis</div><div><br/></div><div>http://blog.csdn.net/techbirds_bao/article/details/9233599/</div><div><br/></div><div>毕玄</div><div><a href=\"http://www.blogjava.net/bluedavy/\">http://www.blogjava.net/bluedavy/</a></div><div><br/></div><div>活动行</div><div><a href=\"http://www.huodongxing.com/\">http://www.huodongxing.com/</a></div><div><br/></div><div>放翁</div><div><a href=\"http://blog.csdn.net/cenwenchu79\">http://blog.csdn.net/cenwenchu79</a></div><div><br/></div></div>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "JVM深入理解 done",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\"><ul><li><br/></li></ul><p>大内存的相应问题:Full CG耗时过长，所以不应该有大量的长时间大对象</p><p>64bit要考虑的问题：</p><p>1. 内存回收的停顿</p><p>2. 现阶段64bitjdk的性能低</p><p>3. 产生dump快照无法分析，太大</p><p>4. 消耗内存大，指针膨胀，数据类型补齐</p><div><br clear=\"none\"/></div><div>虚拟机执行子系统：</div><div><img src='quiver-image-url/7E4B8026707F3633D91A344F1ADD093B' style='cursor: default;cursor: default;cursor: default;'></div><div>1. 对于引用静态字段，只有直接定义这个字段的类才会被初始化</div><div>2. 数组不会触发初始化</div><div>3. 常量的引用不会触发初始化</div><div>4. 接口初始化只有用到父类的接口才会初始化父类接口</div><div>5. 加载的时候如果classloader不一样那么相等判断和instanceof判断为false</div><div>加载器</div><div><img src='quiver-image-url/6CDD56C6B6D0645B41E1AC405F74EEB0' style='cursor: default;cursor: default;cursor: default;'></div><div><br/></div><div><br/></div><div><img src='quiver-image-url/D900B5D6A2F9B6515B390E352B1E9FE2' style='cursor: default;cursor: default;' height='72' width='634'></div><div><br/></div><div><img src='quiver-image-url/9E2F1A1C7B788D4E30F2DA4A1034C329' style='cursor: default;' height='171' width='650'></div><div><br/></div><div><img src='quiver-image-url/0386D6AD5BDDFD24F156354FBA23BA55' style='cursor: default;' height='369' width='635'></div><div><br/></div><div>重载与类型转换 p271</div><div><br/></div><div>虚拟机执行，jdk1.7 invokedinamyc</div><div><br/></div><div>297<br clear=\"none\"/></div><div><br/></div><div>第五部分，高并发，</div><div><img src='quiver-image-url/883F981D3E9E9F3716D35BCD5F2CF4C4' style='cursor: default;cursor: default;'></div><div><br/></div><div><br/></div><div><img src='quiver-image-url/8AE59B2683B836F0C8AA491AC595B4E3' style='cursor: default;cursor: default;' height='577' width='641'></div><div><br/></div><div><img src='quiver-image-url/8934A4E06BDE117369BB11E0C6D823EE' style='cursor: default;cursor: default;'></div></div>"
+    }
+  ]
+}

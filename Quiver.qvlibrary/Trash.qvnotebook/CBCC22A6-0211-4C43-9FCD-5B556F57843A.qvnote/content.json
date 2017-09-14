@@ -1,0 +1,9 @@
+{
+  "title": "代码规范",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div>接口命名规范</div><div>api &nbsp; &nbsp; &nbsp; ***ApiService</div><div>provider &nbsp;***ApiServiceImpl</div><div>business ***Biz &nbsp; &nbsp; ***BizImpl</div><div>service ***Service &nbsp; ***ServiceImpl</div><div><br></div><div>实体命名规范</div><div>Api ***Dto</div><div>Business &nbsp; ***Model</div><div>service &nbsp; &nbsp;***Model &nbsp;</div><div>数据库实体 User &nbsp;---- &nbsp;table(t_user)</div><div><br></div><div>目录结构</div><div>tc-api</div><div>tc-provider</div><div>tc-business</div><div>tc-service</div><div>tc-common</div>"
+    }
+  ]
+}

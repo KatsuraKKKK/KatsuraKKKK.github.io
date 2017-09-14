@@ -1,0 +1,9 @@
+{
+  "title": "Untitled Note",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div>CREATE TABLE `commission_with_settlements` (</div><div>&nbsp; `commission_id` bigint(11) DEFAULT NULL,</div><div>&nbsp; `order_id` bigint(11) DEFAULT NULL,</div><div>&nbsp; `settlement_count` int(11) DEFAULT NULL</div><div>) ENGINE=InnoDB DEFAULT CHARSET=utf8</div><div><br></div><div><br></div><div><div>#Notification of mail.</div><div>tws.smtpServer=10.50.50.66</div><div>tws.smtpServerPort=587</div><div>tws.emailAccount=report_service@fangdd.com</div><div>tws.emailPassword=Fdd123456~</div><div>tws.emailFrom=report_service@fangdd.com</div><div>tws.emailsTo=yiqinglin@fangdd.com,zoukeming@fangdd.com,panfeilong-sz@fangdd.com,lilizhen@fangdd.com</div><div>#tws.checkingResultEmailTo=yiqinglin@fangdd.com,zoukeming@fangdd.com,panfeilong-sz@fangdd.com,lilizhen@fangdd.com</div><div>tws.checkingResultEmailTo=jiangxiaohua@fangdd.com,libingshu@fangdd.com,lipengfei@fangdd.com,xiaoli@fangdd.com,panjiaorong@fangdd.com,mingkehong@fangdd.com,lizhenggang@fangdd.com,xiaoyingping@fangdd.com,yiqinglin@fangdd.com,wanglisheng@fangdd.com,chenxiaowei@fangdd.com,panfeilong-sz@fangdd.com,zhanshiheng@fangdd.com,zhonghai@fangdd.com,weilaimei@fangdd.com,furongmei-sz@fangdd.com,zoukeming@fangdd.com</div><div>tws.enableEmailNotification=true</div><div>#yiqinglin@fangdd.com|wangyifeng@fangdd.com|lizhenggang@fangdd.com|lilizhen@fangdd</div></div>"
+    }
+  ]
+}

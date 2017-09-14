@@ -1,0 +1,9 @@
+{
+  "title": "Git",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Git tag\n用于标记里程碑或者发布点\n  * $git tag   列出所有标签\n  * $git tag -l vxx.xx.* 通配符匹配\n  * $git tag -a v1.4 -m \"version1.4\" 新建带注释标签\n  * $git tag v1.4 新建轻量级标签\n  * $git tag -a v1.2 [commit]对某个commit打标签\n  * $git push origin <tagname> 将标签到远程仓库，默认的git push不会把标签传送到远程的服务器，你可以在后面加-tags选项, git push --tags\n  * $git push origin --delete tag <name> 或者$git push origin :refs/tags/<tagname>删除远程仓库的标签\n  \n## git log\n * git log --graph --pretty=format:'%C(bold red)%h %Creset- %C(bold yellow)%d %C(bold cyan)%s %C(bold green)[%cr] %C(bold magenta)[%cn] %C(bold green)[%ci]'"
+    }
+  ]
+}

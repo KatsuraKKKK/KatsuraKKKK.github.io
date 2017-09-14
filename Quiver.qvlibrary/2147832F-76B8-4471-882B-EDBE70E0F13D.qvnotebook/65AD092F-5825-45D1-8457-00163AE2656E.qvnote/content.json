@@ -1,0 +1,17 @@
+{
+  "title": "一个很长的字符串str 还有一个字符集比如{a,b,c} 找出str里包含{a,b,c}的最短子串。",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\"><div>一个很长的字符串str&nbsp;还有一个字符集比如{a,b,c}&nbsp;找出str里包含{a,b,c}的最短子串。</div><div><a shape=\"rect\" href=\"http://blog.csdn.net/yahohi/article/details/7906833\" target=\"_blank\">http://blog.csdn.net/yahohi/article/details/7906833</a><br clear=\"none\"></div><div><br clear=\"none\"></div><div>有一个很大很大的输入流,大到没有存储器可以将其存储下来,而且只输入一次,如何从</div><div><a shape=\"rect\" href=\"http://blog.csdn.net/afeiluo/article/details/10347351\" target=\"_blank\">http://blog.csdn.net/afeiluo/article/details/10347351</a><br clear=\"none\"></div><div><br clear=\"none\"></div><div><a shape=\"rect\" href=\"http://blog.csdn.net/qibaoyuan/article/details/5869119\" target=\"_blank\">http://blog.csdn.net/qibaoyuan/article/details/5869119</a><br clear=\"none\"></div><div><a shape=\"rect\" href=\"http://item.jd.com/671219.html\" target=\"_blank\">LGIPS224T</a></div><div><div><br clear=\"none\"></div><div>神器的鸡蛋</div><div><a shape=\"rect\" href=\"http://blog.csdn.net/kingjinzi_2008/article/details/7747559\" target=\"_blank\">http://blog.csdn.net/kingjinzi_2008/article/details/7747559</a><br clear=\"none\"></div><div><br clear=\"none\"></div><div>公共子串</div><div>http://blog.csdn.net/steven30832/article/details/8260189</div><p>news.html5tricks.com/to-be-google-programmer.html</p><p>动态规划，公共字串<br clear=\"none\"></p><p>blog.csdn.net/steven30832/article/details/8259948</p><p>二叉树的最大距离<br clear=\"none\"></p><p>blog.csdn.net/steven30832/article/details/7996579</p></div></div>"
+    },
+    {
+      "type": "text",
+      "data": "<p><strong>有6种不同颜色的球，分别记为1,2,3,4,5,6，每种球有无数个。现在取5个球，求在以下的条件下：<br>1、5种不同颜色，<br>2、4种不同颜色的球，<br>3、3种不同颜色的球，<br>4、2种不同颜色的球，<br>它们的概率。 </strong></p>\n<p> 解答1:</p>\n<p> 排列用C，组合用A。既然题目说是无数个,就相当于有放回的取6个不同颜色的球。因此，所有情况是6^5=7776，充当分母 </p>\n<p>A5种：C65A55=720 </p>\n<p>A4种：C64C41A55/2=3600 </p>\n<p>A3种：C63[C31A55/(3!)+C32A55/(2!*2!)]=3000 </p>\n<p>A2种：C62[C21A55/(4!)+C21A55/(3!*2!)]=450 </p>\n<p>A1种：C61[A55/5!]=6 </p>\n<p>算完在草稿纸上验算一下有没有算漏掉：A5+A4+A3+A2+A1=7779=6^5,说明准确无误， </p>\n<p>再算概率： </p>\n<p>P5=A5/7776 </p>\n<p>P4=A4/7776</p>\n<p> 解答2: </p>\n<p>由于求无数：故去掉各颜色求的概率为1/6 </p>\n<p>1.概率为：1*5/6*4/6*3/6*2/6 = 5/54 </p>\n<p>2.有两球颜色要重合：概率为1/6：1/6*1/6*5/6*4/6*3/6 </p>\n<p>3.有3球颜色要重合：1/6*1/6*1/6*5/6*4/6 </p>\n<p>4.有4球颜色要重合：1/6*1/6*1/6*1/6*5/6</p>\n"
+    },
+    {
+      "type": "text",
+      "data": "￼<img src=\"quiver-image-url/D890D03FD86163B0368A77B41C2F4299.jpg\">"
+    }
+  ]
+}

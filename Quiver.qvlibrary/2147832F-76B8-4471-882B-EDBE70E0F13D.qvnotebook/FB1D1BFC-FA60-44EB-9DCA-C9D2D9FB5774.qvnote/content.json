@@ -1,0 +1,9 @@
+{
+  "title": "Linux命令",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<ul>\n<li><p>Kill掉从ps查询出的一定规则的进程</p>\n<p>ps aux | grep totem | grep java | cut -c 10-14 | xargs kill -9</p>\n</li><li><p>查看调用dbproxy的进程</p>\n<p>cat dbproxy.log|awk -F&#39;[&#39; &#39;{print $4}&#39;|awk -F&#39;:&#39; &#39;{print $1}&#39;|sort -n|uniq -c</p>\n</li><li><p>查看端口占用</p>\n<p>netstat -A | grep</p>\n</li><li><p>生成md5文件</p>\n<p>md5sum AvatarActivityDayStat_$(date +%Y%m%d).txt > AvatarActivityDayStat_$(date +%Y%m%d).txt.md5</p>\n</li><li><p>curl发送post请求</p>\n<p>curl -l -H &quot;&#39;Content-type&#39;:&#39;application/json&#39;, &#39;charset&#39;:&#39;utf-8&#39;, &#39;Accept&#39;: &#39;text/plain&#39;&quot; -X POST -d &#39;{&quot;phone&quot;:&quot;13521389587&quot;,&quot;password&quot;:&quot;test&quot;}&#39; <a href=\"http://domain/apis/users.json\">http://domain/apis/users.json</a></p>\n</li><li><p>过滤登陆用户名</p>\n<p>grep &#39;Request:&#39; info.log.2017-09-05.0 | grep reallyByeBye | grep userName | sed &#39;s/ /\\n/g&#39; | grep userName | sort | uniq > username.txt</p>\n</li></ul>\n"
+    }
+  ]
+}

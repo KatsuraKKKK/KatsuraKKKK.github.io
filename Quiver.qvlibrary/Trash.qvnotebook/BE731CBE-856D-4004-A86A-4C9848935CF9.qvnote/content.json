@@ -1,0 +1,9 @@
+{
+  "title": "房商平台会议",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\">\n<div>\n<div>\n<div>\n<div>FQD： 小二使用，订单入口  调用支付</div>\n<div>CIC：客户信息中心</div>\n<div>权限系统：公用</div>\n<div>房云宝：城总，报表</div>\n</div>\n<div>房商平台：</div>\n<div>FGW：财务网关</div>\n<div>\n<div>Base：城市区域</div>\n</div>\n<div>SC：结算</div>\n<div><br/></div>\n<div><br/></div>\n<div>房商通过平台给经纪人佣金</div>\n</div>\n<div><br/></div>\n<div><br/></div>\n<div>商户系统</div>\n<ol>\n<li>开店</li>\n<li>线下采购（总监拿盘：背书（合同））\n<ol>\n<li>团购：2w抵5w（2w佣金，</li>\n<li>导客</li>\n<li>代收代付</li>\n</ol>\n</li>\n<li>上架商品</li>\n<li>引流卖房</li>\n<li>客源：自来客， 经纪人，C端</li>\n<li>带看，产生订单</li>\n<li>结算</li>\n</ol>\n<div>、</div>\n<div><br/></div>\n<div>推客保护期</div>\n</div>\n<div>如何知道是开发商客户</div>\n<div>C端保护期</div>\n<div><br/></div>\n</div>"
+    }
+  ]
+}

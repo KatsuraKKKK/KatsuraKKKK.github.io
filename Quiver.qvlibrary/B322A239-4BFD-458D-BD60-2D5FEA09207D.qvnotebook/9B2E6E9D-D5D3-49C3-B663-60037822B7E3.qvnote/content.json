@@ -1,0 +1,9 @@
+{
+  "title": "FQD需求",
+  "cells": [
+    {
+      "type": "text",
+      "data": "V4.2.1<br><div><input type=\"checkbox\">&nbsp;经纪人到访，经纪人未跟进</div><div><input type=\"checkbox\" checked=\"checked\">&nbsp;C端客户页面支持选择楼盘，客户列表查询结果显示楼盘名称，客户详情页增加楼盘名称</div><div><input type=\"checkbox\"><strike>&nbsp;客户日志增加带看凭证图片</strike></div><div><input type=\"checkbox\" checked=\"checked\">订单列表页增加楼盘筛选，列表增加楼盘字段 &nbsp;&nbsp;</div><div><input type=\"checkbox\" checked=\"checked\">业绩确认单增加楼盘选项</div><div><input type=\"checkbox\" checked=\"checked\">&nbsp;异常申诉列表增加楼盘字段</div><div><strike><input type=\"checkbox\" checked=\"checked\">申诉增加风控终审节点显示</strike></div><div><br></div><div><br></div><div><br></div><div><br></div>"
+    }
+  ]
+}
