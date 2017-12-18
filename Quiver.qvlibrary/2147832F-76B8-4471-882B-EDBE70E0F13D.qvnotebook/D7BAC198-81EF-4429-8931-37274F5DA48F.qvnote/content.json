@@ -1,9 +1,0 @@
-{
-  "title": "SSH免密码",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\"><ul><li>机器之间ssh public key设置</li></ul><div style=\"text-indent: 0mm; margin: 0.00mm 0mm 0.00mm 4mm;\"><div style=\"margin-left:40px;\">A机器无需密码访问B机器设置步骤：</div><div style=\"margin-left:40px;\">1.查看A机器：less ~/.ssh/id_rsa.pub</div><div style=\"margin-left:40px;\">2.在B机器中添加A机器的ssh-rsa key：vim ~/.ssh/authorized_keys</div><div style=\"margin-left:40px;\">参考资料：http://wiki.tuna.tsinghua.edu.cn/SshKeyHowto</div></div></div>"
-    }
-  ]
-}

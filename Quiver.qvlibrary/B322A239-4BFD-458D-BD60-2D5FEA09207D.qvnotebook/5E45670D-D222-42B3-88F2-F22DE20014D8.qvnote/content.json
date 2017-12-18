@@ -1,9 +1,0 @@
-{
-  "title": "Untitled Note",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<div><div>SELECT</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\">\t</span>DATE_FORMAT(created_time, '%Y') AS year, count(*) AS num, sum(debit_amount)/1000000 AS amount, sum(debit_amount)/1000000/count(*) AS avarage_amount, sum(debit_amount)*0.078/1000000 AS income</div><div>FROM</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\">\t</span>t_debit&nbsp;</div><div>WHERE</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\">\t</span>STATUS IN (0,1,2,4)</div><div>GROUP BY</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\">\t</span>year;</div></div><img src=\"quiver-image-url/C33B387A0A72701A7855360FDD671FDD.jpg\"><div><br></div><div><div><br></div></div><div><br></div><div><br></div><div><br></div>"
-    }
-  ]
-}

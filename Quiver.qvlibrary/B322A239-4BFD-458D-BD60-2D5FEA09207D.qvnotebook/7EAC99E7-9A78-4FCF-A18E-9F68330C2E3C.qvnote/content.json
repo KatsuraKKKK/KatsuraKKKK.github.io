@@ -1,9 +1,0 @@
-{
-  "title": "Untitled",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<div style=\"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; white-space: normal;\">\n<div>p.s. 分享一个靠谱的面试记录应该怎么写:  </div>\n<div><br/></div>\n<div><br/></div>\n<div>方式: 微信视频    时间:2016-08-29晚八点</div>\n<div><br/></div>\n<div>总体评价: 该候选人对于MapReduce理解一般，基本没有hive的使用经验。13年才开始使用java, 14年才开始接触hadoop，主要是使用框架做日志的收集和计算。</div>\n<div>    对于数据平台这边的需求来说，总体上不是很相符。没有J2EE的开发经验，二次开发的外围系统不合适；没有hive经验，对于数据库本身掌握也一般，不具有hive调优能力以及UDF开发能力。</div>\n<div><br/></div>\n<div><br/></div>\n<div>面试问题:</div>\n<div>1.数据结构与算法</div>\n<div>  -二叉树\\队列\\B+树\\排序:希尔排序;基数排序;位排序</div>\n<div>  答：二叉树知道大概的结构和过程，对于细节不是很清楚。基数排序，位排序没有答出来</div>\n<div>2. 数据库</div>\n<div>  -数据库性能调优</div>\n<div>  答：主要从主从架构和分库的角度进行，使用Mysql的内存数据引擎，但跟索引在这上面的性能优化有什么区别并不清楚。</div>\n<div>  -查询计划与SQL编译解析过程</div>\n<div>  答：讲不清楚，知道一些.</div>\n<div>  -nest loop join 与 sort merge join有什么区别</div>\n<div>  答: 只是讲了nest loop join的过程，别的没有答。</div>\n<div>3. JVM调优</div>\n<div>  答：看GC日志，一般是GC次数多引起，通过调JVM参数增加内存。(感觉不是很清楚GC的机制，讲不清楚)</div>\n<div>4. Hadoop</div>\n<div>  -过往经验</div>\n</div>"
-    }
-  ]
-}

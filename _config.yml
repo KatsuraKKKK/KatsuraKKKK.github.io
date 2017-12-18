@@ -1,35 +1,65 @@
-# Jekyll configuration
+# Site settings 配置站点
+title: 'Katsura_s blog'
+description: 'Keep it simple, stupid. & Dont repeat yourself.'
+keyword: '颇安, Java, 分布式'
+url: 'http://katsurakkkk.github.io/' # your host
 
-name: Katsura
-description: Keep it simple stupid.<br>Don't repeat yourself.
-
-# url is currently only used only for the RSS feed in feed.xml
-url: http://katsurakotarou.github.io
-
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
+# if you don't need baseurl, you should leave this value blank.
 baseurl: ''
 
-# This can be '' to hide the Github nav button
-github: 'KatsuraKKKK/KatsuraKKKK.github.io'
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-61552725-1'
+# Author 配置博主信息
+author: '潘飞龙'
+nickname: '颇安'
+bio: '技术，阅读，电影'
+avatar: '/assets/img/myprofie.jpg'
 
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: 'KatsuraKotarou'
-comments: true
+# Search
+search: true
 
-permalink: /:year/:month/:title
-paginate: 5
+# Night mode
+nightMode: true
 
-highlighter: rouge # pygments
-# markdown: redcarpet
-# redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+# Comments
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-exclude: ['README.md', 'LICENSE']
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin, cnblog
+sns:
+  # weibo: '//weibo.com/lovecolcol'
+  github: '//github.com/KatsuraKKKK'
+  cnblog: '//www.cnblogs.com/katsura'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+RSS: false
+
+# Plugins
+gems: [jekyll-paginate]

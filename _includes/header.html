@@ -1,61 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{{ site.name }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		var url = document.URL,
-	 		indexOfX = url.lastIndexOf("/"),
-			indexOfDot = url.lastIndexOf("."),
-			subStr = url.substr(indexOfX+1, indexOfDot-indexOfX-1),
-			selector = "#home";
-		if ("" != subStr){
-			selector = "#" + subStr;
-		} else {
-
-		}
-		$(selector).addClass("active").removeClass("inactive");
-	});
-	</script>
-    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/pygments.css" rel="stylesheet">
-	<link href="{{ site.baseurl }}/css/my.css" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li id="home" class="inactive"><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li id="links" class="inactive visible-xs-block"><a href="{{ site.baseurl }}/links.html">Links</a></li>
-                    <li id="archive" class="inactive"><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
-		   		 	<li id="category" class="inactive"><a href="{{ site.baseurl }}/category.html">Category</a></li>
-		    		<li id="tag" class="inactive"><a href="{{ site.baseurl }}/tag.html">Tag</a></li>
-                    <li id="about" class="inactive"><a href="{{ site.baseurl }}/about.html">About</a></li>
-                    <li id="feed" class="inactive"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
-                    {% if site.github != '' %}
-                    <li id="git" class="inactive"><a href="https://github.com/{{ site.github }}">Github</a></li>
-                    {% endif %}
-                </ul>
-              </div>
-        </div>
+<header class="g-header">
+    <div class="g-logo">
+      <a href="{{ "/" | relative_url }}"></a>
     </div>
-</div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

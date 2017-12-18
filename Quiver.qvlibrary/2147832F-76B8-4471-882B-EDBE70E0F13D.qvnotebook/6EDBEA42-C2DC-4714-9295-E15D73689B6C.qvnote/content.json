@@ -1,9 +1,0 @@
-{
-  "title": "Redis",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<div><strong style=\"margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 'Microsoft YaHei', Helvetica, sans-serif; font-size: 14px;\"><font color=\"red\" style=\"margin: 0px; padding: 0px;\">banyuner</font></strong><br></div><div><strong style=\"margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 'Microsoft YaHei', Helvetica, sans-serif; font-size: 14px;\"><font color=\"red\" style=\"margin: 0px; padding: 0px;\"><a href=\"http://www.xuxk.com/\" style=\"color: rgb(85, 85, 85); text-decoration: none; font-family: 'Microsoft YaHei', 宋体, Tahoma, Geneva, sans-serif; font-weight: normal;\"><span style=\"color: rgb(255, 0, 0);\"><strong>www.xuxk.com</strong></span></a><br></font></strong></div><div><br></div>批量删除<div>eval \"return redis.call('del',unpack(redis.call('keys',ARGV[1])))\" 0 'cic_house_customer*'<br></div>"
-    }
-  ]
-}

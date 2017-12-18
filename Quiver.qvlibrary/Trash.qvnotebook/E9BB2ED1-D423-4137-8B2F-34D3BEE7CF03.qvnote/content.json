@@ -1,9 +1,0 @@
-{
-  "title": "新电商线上问题",
-  "cells": [
-    {
-      "type": "markdown",
-      "data": "1. 资金管理\n~~2. 商户系统首页报500错误~~ BI\n3. 订单1479218归属有误\n4. 退款订单列表排序问题\n~~5. 订单查询带退款状态参数查询sql问题~~\n~~6. 订单查询带orderStatusList查询sql问题~~\n7. 门店码 80120606  订单号1463021 请佣单号1552324  显示一个订单结佣了2次 共8千 负佣金4000要退回去  实际上只结佣了一次4000,点击‘详查请佣单号’报错  --胡腾\n![WechatIMG1.jpeg](quiver-image-url/5D1DF1505981EDCE6DB3B0D792DAAECB.jpg)\n~~8. 绿地国际花都 查询项目详情报错：查询的项目详情不存在~~ POC\n\n\n\n\n\n(一)新TC自动功能发布功能已经可以使用,具体步骤：\n1. 在工程项目根目录执行mvn clean package -Dmaven.test.skip=true\n3. deploy/target文件夹下的trade-center.zip即为部署包\n4. 将部署包发布到生产环境：scp trade-center.zip java@10.50.10.162:/data0/java/deploy/trade-center/\n5. 删除conf、lib目录,解压trade-center.zip,执行bin/start.sh(或restart.sh)\n6. bin/log.sh工具可以快速查看日志\n\n说明：4、5步骤是程序自动完成的,用于编写脚本\n\n(二)稳妥起见,项目组决定本次新TC上线采用手动发包,具体步骤：\n1. 取包的3种方法(优先取预发布环境的部署包,其次测试环境):\n   A.预发布环境下/data0/java/deploy/trade-center/lib/trade-center.jar\n   B.测试环境下/data0/java/deploy/tmc.nh.fdd/trade-center.jar\n   C.在工程项目根目录执行mvn clean package -Dmaven.test.skip=true,本地解压deploy/target/trade-center.zip,取lib/trade-center.jar\n\n2. 将trade-center.jar发布到预发布环境:\n   scp trade-center.jar java@10.50.10.204:/data0/java/deploy/trade-center/lib/\n\n3. 将trade-center.jar发布到生产环境:\n   scp trade-center.jar java@10.50.10.162:/data0/java/deploy/trade-center/lib/\n   scp trade-center.jar java@10.50.10.163:/data0/java/deploy/trade-center/lib/\n\n4. 执行/data0/java/deploy/trade-center/bin/start.sh(或restart.sh)脚步即可启动\n5. bin/log.sh工具可以快速查看日志\n\n说明：\n1. 手动发包不会替换配置文件conf/application.properties,如果配置有变动,请同步修改部署目录下的conf/application.properties\n2. 手动发包不会替换环境变量配置文件bin/setenv.sh,如果配置有变动(类似JAVA_HOME),请同步修改部署目录下的bin/setenv.sh\n4. 另外新TC各个环境中的配置文件(application.properties),都在工程项目的deploy/conf/env-sample目录下,方便取用\n3. 发包过程中遇到问题请联系@胡腾、@李宝、@方岗、@潘飞龙\n群公告\n00:44\n胡腾(胡腾)\n胡腾\n生产环境 dubbo 后台  host: 10.50.10.201 dubbo-xf.fangdd.cn\n胡腾(胡腾)\n胡腾\n访问地址 dubbo-xf.fangdd.cn  guest/guest"
-    }
-  ]
-}

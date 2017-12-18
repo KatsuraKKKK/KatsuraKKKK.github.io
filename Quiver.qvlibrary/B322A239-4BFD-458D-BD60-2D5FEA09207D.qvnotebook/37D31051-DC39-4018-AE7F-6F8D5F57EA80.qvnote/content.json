@@ -1,9 +1,0 @@
-{
-  "title": "Untitled Note",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<p>Dubbo</p><p>queryGuideHouseList -- 新接口 queryProofGuideList</p><p>queryCeRecordItem -- &nbsp;新接口</p><p>queryAssistantFunc — 去除 done</p><p>queryCustomerActionLog -- 保留</p><p>confirmGuide -- 换新接口, auditGuide</p><p>refuse -- 保留</p><p>receive -- 保留</p><p><br></p><p>Thrift</p><p>queryCustomerFollowLog, -- 保留</p><p>queryCustomerChannelLog, — 去除 done</p><p>queryCustomerHouseFocusList, — 去除 done</p><p>addCustomerFollow -- 保留</p>\n"
-    }
-  ]
-}

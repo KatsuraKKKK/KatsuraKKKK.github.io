@@ -1,9 +1,0 @@
-{
-  "title": "大数据日知录",
-  "cells": [
-    {
-      "type": "text",
-      "data": "<h2>一致性</h2><h3>一致性Hash</h3><div><ul><li>稳定性检测<br></li><li>虚拟节点</li></ul><h3>向量时钟</h3><h3>RWN协议（需要其他机制比如向量时钟判断哪一份数据是最新的）</h3><div><br></div></div><h2>算法和数据结构</h2><h3>Bloom Filter</h3><div><img src=\"quiver-image-url/EB70BD902682DEB008517CD9260BE5F6.jpg\"><br></div><div><br></div><div><img src=\"quiver-image-url/99448A4EFF51184C01F3EA66860662C6.jpg\"><br></div><div><br></div><h3>SkipList</h3><div><img src=\"quiver-image-url/6D79623D126C0D761E3649878F285411.jpg\"><br></div><div><br></div><h3>LSM树（Log-structured Merge-tree)</h3><div><br></div><h3>Merkle哈希树</h3><div>用来在海量数据下快速定位少量变化数据的内容</div><div><br></div><h3>Cuckoo哈希</h3><div><img src=\"quiver-image-url/893E39DA36BC25156F5CFBA037748B64.jpg\"><br></div><div><br></div><h2>资源管理抽象模型</h2><div><br></div><h2>KAFKA</h2><div><img src=\"quiver-image-url/48CF1F79A30BD283043C74BF8637E9FF.jpg\"><br></div><div><br></div><div><img src=\"quiver-image-url/E24B10FCE4CBCBAF0D19978937D1D6E6.jpg\"><br></div><div><br></div><h2>应用层多播通信</h2><h3>gossip协议</h3><div><br></div><div>storm的恰好一次送达语义保证：</div><div><br></div><div><br></div>"
-    }
-  ]
-}
