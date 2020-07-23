@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: 'Katsura_s blog'
+title: 'TarPitOut'
 description: 'Keep it simple, stupid. & Dont repeat yourself.'
 keyword: '颇安, Java, 分布式'
-url: 'http://katsurakkkk.github.io/' # your host
+url: 'http://tarpitout.top/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
